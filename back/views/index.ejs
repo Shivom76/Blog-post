@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="mainPost.css">
 </head>
 <body>
     <h2>Quora postss!!</h2>
     <% for(post of posts){ %>
-        <div>
-            <h2>@<%= post.username %></h2>
-            <%= post.content %>
-            <br>
-            <a href="http://localhost:8080/posts/<%=post.id%>">Show in detail</a>
-            <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
-            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
-                <button>Delete blog</button>
-            </form>
+        <div class="postss">
+            <div class="post">
+                <h2>@<%= post.username %></h2>
+                <%= post.content %>
+                <br>
+                <a href="http://localhost:8080/posts/<%=post.id%>">Show in detail</a>
+                <a href="http://localhost:8080/posts/<%=post.id%>/edit">Edit</a>
+                <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                    <button>Delete blog</button>
+                </form>
+            </div>
         </div>
    <% } %>
    <a href="http://localhost:8080/posts/new">Create blog</a>
