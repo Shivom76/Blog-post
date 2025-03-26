@@ -4,12 +4,20 @@
 
 .postss{
     display:inline-block;
-    background-color:rgb(223, 223, 29);
+    background-color:rgb(202, 202, 187);
     width:14rem;
     height:18rem;
     margin:0 5px;
     border:2px solid black;
     padding:4px 6px;
+    border-radius:12px;
 }
 
+a{
+    color:black;
+}
 
+#dlt{
+    background-color:aqua;
+    border:2px solid black;
+}
